@@ -9,8 +9,8 @@ import org.junit.Before;
 
 import org.junit.Test;
 
-import shopManager.MyProduct;
-import shopManager.Product;
+import shopmanager.MyProduct;
+import shopmanager.Product;
 
 
 /**

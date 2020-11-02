@@ -1,4 +1,4 @@
-package shopManager;
+package shopmanager;
 
 import java.io.Serializable;
 
@@ -25,23 +25,25 @@ public class MyProduct implements Product,Serializable{
 	private String id;
 	private int number;
 	
-	MyProduct(String id) {
+	public MyProduct(String id) {
 		this.id=id;
 		number=1;
 	}
 	
-	MyProduct(String id,int number) {
+	public MyProduct(String id,int number) {
 		this.id=id;
 		this.number=number;
 	}
 	 @Override
     public void setId(String id) {
-    	trazador.info("Estableciendo id a "+id);
+		String msg="Estableciendo id a "+id;
+    	trazador.info(msg);
         this.id=id;
     }
     @Override
-    public String getId() {
-    	trazador.info("Devolviendo id como "+id);
+    public String getId() { 	
+    	String msg="Devolviendo el id como "+id;
+    	trazador.info(msg);
     	return this.id;
     }
     @Override
@@ -65,7 +67,8 @@ public class MyProduct implements Product,Serializable{
     	} else {
     		trazador.info("El número de unidades del producto no se puede reducir porque es cero");
     	}
-    	trazador.info(this.toString());
+    	String msg=toString();
+    	trazador.info(msg);
     	return number;
     }
     

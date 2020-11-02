@@ -1,4 +1,4 @@
-package shopManager;
+package shopmanager;
 /**
  * 
  * @author Isabel Román

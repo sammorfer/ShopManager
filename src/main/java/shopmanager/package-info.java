@@ -1,4 +1,4 @@
-package shopManager;
+package shopmanager;
 
 /**
  * Este paquete contiene las clases para los productos y el gestión del stock

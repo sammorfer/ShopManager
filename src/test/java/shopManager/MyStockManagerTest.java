@@ -8,10 +8,10 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import shopManager.MyProduct;
-import shopManager.Product;
-import shopManager.StockManager;
-import shopManager.MyStockManager;
+import shopmanager.MyProduct;
+import shopmanager.MyStockManager;
+import shopmanager.Product;
+import shopmanager.StockManager;
 
 
 /**
@@ -24,7 +24,7 @@ public class MyStockManagerTest {
 	String underTestAsString;
 
 	/**
-	 * Test method for {@link shopManager.MyStockManager#getInstance()}.
+	 * Test method for {@link shopmanager.MyStockManager#getInstance()}.
 	 */
 	@Test
 	public void testGetInstance() {
@@ -36,7 +36,7 @@ public class MyStockManagerTest {
 	}
 
 	/**
-	 * Test method for {@link shopManager.MyStockManager#addProduct(shopManager.Product)}.
+	 * Test method for {@link shopmanager.MyStockManager#addProduct(shopmanager.Product)}.
 	 */
 	@Test
 	public void testAddProduct() {
@@ -48,7 +48,7 @@ public class MyStockManagerTest {
 	}
 
 	/**
-	 * Test method for {@link shopManager.MyStockManager#searchProduct(java.lang.String)}.
+	 * Test method for {@link shopmanager.MyStockManager#searchProduct(java.lang.String)}.
 	 */
 	@Test
 	public void testSearchProduct() {
