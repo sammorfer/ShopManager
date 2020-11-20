@@ -5,4 +5,4 @@ Usa gradle para controlar la construcci�n y dependencias
 Usa el sistema de trazado de java
 Usa hazelcast para tener datos en memoria compartida del stock y de los pedidos
 
-Esta librería podrá ser usada tanto por aplicaciones cliente como servidor en el proceso de venta on-line"
+Esta librería podrá ser usada tanto por aplicaciones cliente como servidor en el proceso de venta on-line
