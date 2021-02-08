@@ -23,12 +23,23 @@ tasks.withType(Javadoc) {
     options.author = true
     options.version = true
 }
+group = 'MIT.FS'
+version = '0.1'
+sourceCompatibility = '14'
 
 repositories {
     // Use jcenter for resolving dependencies.
     // You can declare any Maven/Ivy/file repository here.
     jcenter()
     mavenCentral()
+    maven {
+		name = "GitHubPackages"
+		url = uri("https://maven.pkg.github.com/sammorfer/ShopManager")
+		credentials {
+		username = project.findProperty("gpr.user") ?: System.getenv("GITHUB_USERNAME")
+		password = project.findProperty("gpr.key") ?: System.getenv("GITHUB_TOKEN")
+		}
+	}
 }
 
 dependencies {
